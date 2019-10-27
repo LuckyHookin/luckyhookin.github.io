@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.github.io/</id>
     <title>Lucky Hookin</title>
-    <updated>2019-10-26T07:41:26.672Z</updated>
+    <updated>2019-10-27T03:14:55.487Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.github.io/"/>
     <link rel="self" href="https://luckyhookin.github.io//atom.xml"/>
@@ -10,6 +10,82 @@
     <logo>https://luckyhookin.github.io//images/avatar.png</logo>
     <icon>https://luckyhookin.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Lucky Hookin</rights>
+    <entry>
+        <title type="html"><![CDATA[这些快捷键你知道几个？（一）]]></title>
+        <id>https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge</id>
+        <link href="https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge">
+        </link>
+        <updated>2019-10-26T12:13:30.000Z</updated>
+        <summary type="html"><![CDATA[<p>作为一名程序猿，使用一些效率技巧可以大大提高我们的开发速度。有时鼠标需要多个步骤才能做出来的效果，通过一、两组快捷键就能达到。下面小编就来介绍一些win系统下常用的快捷键，看看你知道几个？</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>作为一名程序猿，使用一些效率技巧可以大大提高我们的开发速度。有时鼠标需要多个步骤才能做出来的效果，通过一、两组快捷键就能达到。下面小编就来介绍一些win系统下常用的快捷键，看看你知道几个？</p>
+<!-- more -->
+<p><ul class="markdownIt-TOC">
+<li><a href="#%E4%BD%9C%E7%94%A8%E4%BA%8E%E7%AA%97%E5%8F%A3">作用于窗口</a>
+<ul>
+<li><a href="#alt-f4">Alt + F4</a></li>
+<li><a href="#win">Win + ↑/↓</a></li>
+<li><a href="#win-2">Win + ←/→</a></li>
+<li><a href="#win-m">Win + M</a></li>
+<li><a href="#win-1~0">Win + 1~0</a></li>
+</ul>
+</li>
+<li><a href="#%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91">文本编辑</a>
+<ul>
+<li><a href="#ctrl-s">Ctrl + S</a></li>
+<li><a href="#ctrl-n">Ctrl + N</a></li>
+<li><a href="#ctrl-o">Ctrl + O</a></li>
+<li><a href="#ctrl-zy">Ctrl + Z/Y</a></li>
+<li><a href="#ctrlfh">Ctrl+F/H</a></li>
+<li><a href="#homeend">Home/End</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<h1 id="作用于窗口">作用于窗口</h1>
+<h2 id="alt-f4">Alt + F4</h2>
+<p><code>Alt+F4</code> 可以说是非常好用的关闭窗口的快捷键了，但是使用之前记得要保存数据。</p>
+<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io//post-images/alt-f4.gif" alt="altf4gif"></figure>
+<p>除了关闭窗口，它还可以用来关闭系统。</p>
+<figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io//post-images/alt-f4_shutdown.gif" alt="altf4shutdowngif"></figure>
+<h2 id="win">Win + ↑/↓</h2>
+<p><code>Win+↑</code> 与 <code>Win+↓</code> 可以实现窗口的最大化、还原与最小化。</p>
+<figure data-type="image" tabindex="3"><img src="https://luckyhookin.github.io//post-images/win+xiashan.gif" alt="winxiashangif"></figure>
+<h2 id="win-2">Win + ←/→</h2>
+<p><code>Win+←</code> 与 <code>Win+→</code> 可以让几个窗口显示在同一屏，这样就不用频繁切换窗口了。</p>
+<figure data-type="image" tabindex="4"><img src="https://luckyhookin.github.io//post-images/win+zuoyo.gif" alt="winzuoyogif"></figure>
+<p>继续用 <code>Win+↑/↓</code> 可以再分屏。</p>
+<h2 id="win-m">Win + M</h2>
+<p>使用 <code>Win+M</code> 可以让所有窗口最小化，直接回到桌面。</p>
+<figure data-type="image" tabindex="5"><img src="https://luckyhookin.github.io//post-images/win-M.gif" alt="winMgif"></figure>
+<h2 id="win-1~0">Win + 1~0</h2>
+<p>想要精准的切换到快捷启动栏第几个程序，我们只需使用Win+数字键就可以了。</p>
+<figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io//post-images/win-shuz.gif" alt="winshuzgif"></figure>
+<h1 id="文本编辑">文本编辑</h1>
+<h2 id="ctrl-s">Ctrl + S</h2>
+<p>数据无价，总有一些时候数据还没保存，程序就……<br>
+所以常按 <code>Ctrl+S</code> 来保存数据是一个好习惯。</p>
+<figure data-type="image" tabindex="7"><img src="https://luckyhookin.github.io//post-images/ctrl-s.gif" alt="ctrlsgif"></figure>
+<h2 id="ctrl-n">Ctrl + N</h2>
+<p>按下Ctrl+N可以新建文档。</p>
+<figure data-type="image" tabindex="8"><img src="https://luckyhookin.github.io//post-images/ctrl-n.gif" alt="ctrlngif"></figure>
+<h2 id="ctrl-o">Ctrl + O</h2>
+<p><code>Ctrl+O</code> 为打开文件的快捷键。</p>
+<figure data-type="image" tabindex="9"><img src="https://luckyhookin.github.io//post-images/ctrl-o.gif" alt="ctrlogif"></figure>
+<h2 id="ctrl-zy">Ctrl + Z/Y</h2>
+<p><code>Ctrl+Z</code> 与 <code>Ctrl+Y</code> 分别代表撤销与重做，有时候不小心碰到了什么键不妨 <code>Ctrl+Z</code> 一下。</p>
+<figure data-type="image" tabindex="10"><img src="https://luckyhookin.github.io//post-images/ctrl-zy.gif" alt="ctrlzygif"></figure>
+<h2 id="ctrlfh">Ctrl+F/H</h2>
+<p><code>Ctrl+F</code> 与 <code>Ctrl+H</code> 为查找与替换。</p>
+<figure data-type="image" tabindex="11"><img src="https://luckyhookin.github.io//post-images/ctrl-fh.gif" alt="ctrlfhgif"></figure>
+<h2 id="homeend">Home/End</h2>
+<p><code>Home</code> 键可以让光标跳到行首，<code>End</code> 键可以让光标跳到行尾。</p>
+<figure data-type="image" tabindex="12"><img src="https://luckyhookin.github.io//post-images/homeend.gif" alt="homeendgif"></figure>
+<blockquote>
+<p>这篇文章是我上一年暑假时写的，首发于我所在学院的团学公众号，现将它放到这里。</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[vuetify 中为非 vuetify 组件添加过渡效果]]></title>
         <id>https://luckyhookin.github.io//post/vuetify-zhong-wei-fei-vuetify-zu-jian-tian-jia-guo-du-xiao-guo</id>
