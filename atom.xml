@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.github.io/</id>
     <title>Lucky Hookin</title>
-    <updated>2019-10-27T04:05:09.168Z</updated>
+    <updated>2019-10-27T06:50:49.350Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.github.io/"/>
     <link rel="self" href="https://luckyhookin.github.io//atom.xml"/>
@@ -45,7 +45,7 @@
 <h1 id="作用于窗口">作用于窗口</h1>
 <h2 id="alt-f4">Alt + F4</h2>
 <p><code>Alt+F4</code> 可以说是非常好用的关闭窗口的快捷键了，但是使用之前记得要保存数据。</p>
-<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io//post-images/alt-f4.gif" alt="altf4gif"></figure>
+<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io//post-images/alt-f4.gif" alt="alt-f4gif"></figure>
 <p>除了关闭窗口，它还可以用来关闭系统。</p>
 <figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io//post-images/alt-f4_shutdown.gif" alt="altf4shutdowngif"></figure>
 <h2 id="win">Win + ↑/↓</h2>
