@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://luckyhookin.github.io/</id>
+    <id>https://luckyhookin.github.io</id>
     <title>Lucky Hookin</title>
-    <updated>2019-10-28T11:01:50.929Z</updated>
+    <updated>2019-10-28T11:23:04.193Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://luckyhookin.github.io/"/>
-    <link rel="self" href="https://luckyhookin.github.io//atom.xml"/>
+    <link rel="alternate" href="https://luckyhookin.github.io"/>
+    <link rel="self" href="https://luckyhookin.github.io/atom.xml"/>
     <subtitle>终身学习。</subtitle>
-    <logo>https://luckyhookin.github.io//images/avatar.png</logo>
-    <icon>https://luckyhookin.github.io//favicon.ico</icon>
+    <logo>https://luckyhookin.github.io/images/avatar.png</logo>
+    <icon>https://luckyhookin.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Lucky Hookin</rights>
     <entry>
         <title type="html"><![CDATA[这些快捷键你知道几个？（二）]]></title>
-        <id>https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er</id>
-        <link href="https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er">
+        <id>https://luckyhookin.github.io/post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er</id>
+        <link href="https://luckyhookin.github.io/post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er">
         </link>
         <updated>2019-10-28T08:56:48.000Z</updated>
         <summary type="html"><![CDATA[<p>这篇我们讲讲<strong>虚拟桌面</strong>相关的快捷键，还有其他几个快捷键。</p>
@@ -23,23 +23,23 @@
 <h1 id="虚拟桌面">虚拟桌面</h1>
 <h2 id="ctrl-win-d">Ctrl + Win + D</h2>
 <p>按下后新建一个虚拟桌面。</p>
-<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io//post-images/win-c-d.gif" alt="win-c-d.gif"></figure>
+<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io/post-images/win-c-d.gif" alt="win-c-d.gif"></figure>
 <h2 id="ctrl-win">Ctrl + Win + ←/→</h2>
 <p>这两组快捷键可以对虚拟桌面进行左右切换。</p>
-<figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io//post-images/win-c-zy.gif" alt="win-c-zy.gif"></figure>
+<figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io/post-images/win-c-zy.gif" alt="win-c-zy.gif"></figure>
 <h2 id="ctrl-win-f4">Ctrl + Win + F4</h2>
 <p>删除虚拟桌面，其中的应用程序和文档会转到附近的桌面中。</p>
-<figure data-type="image" tabindex="3"><img src="https://luckyhookin.github.io//post-images/win-c-f4.gif" alt="win-c-f4.gif"></figure>
+<figure data-type="image" tabindex="3"><img src="https://luckyhookin.github.io/post-images/win-c-f4.gif" alt="win-c-f4.gif"></figure>
 <h1 id="其他">其他</h1>
 <h2 id="ctrl-shift-esc">Ctrl + Shift + Esc</h2>
 <p>这个快捷键可以直接打开任务管理器。</p>
-<figure data-type="image" tabindex="4"><img src="https://luckyhookin.github.io//post-images/ctr+sh+esc.gif" alt="ctr+sh+esc.gif"></figure>
+<figure data-type="image" tabindex="4"><img src="https://luckyhookin.github.io/post-images/ctr+sh+esc.gif" alt="ctr+sh+esc.gif"></figure>
 <h2 id="shift-delete">Shift + Delete</h2>
 <p>这个快捷键可以直接删除文件并且删除的文件不会出现在回收站里，所以删除时要三思~</p>
-<figure data-type="image" tabindex="5"><img src="https://luckyhookin.github.io//post-images/sh+del.gif" alt="sh+del.gif"></figure>
+<figure data-type="image" tabindex="5"><img src="https://luckyhookin.github.io/post-images/sh+del.gif" alt="sh+del.gif"></figure>
 <h2 id="f2">F2</h2>
 <p>选中文件后按 <code>F2</code> 键可以直接重命名，非常好用。</p>
-<figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io//post-images/f2.gif" alt="f2.gif"></figure>
+<figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io/post-images/f2.gif" alt="f2.gif"></figure>
 <blockquote>
 <p>这篇文章是我上一年暑假时写的，首发于我所在学院的团学公众号，现将它放到这里。这是下半篇。</p>
 </blockquote>
@@ -47,8 +47,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[这些快捷键你知道几个？（一）]]></title>
-        <id>https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge</id>
-        <link href="https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge">
+        <id>https://luckyhookin.github.io/post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge</id>
+        <link href="https://luckyhookin.github.io/post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge">
         </link>
         <updated>2019-10-26T12:13:30.000Z</updated>
         <summary type="html"><![CDATA[<p>作为一名程序猿，使用一些效率技巧可以大大提高我们的开发速度。有时鼠标需要多个步骤才能做出来的效果，通过一、两组快捷键就能达到。下面小编就来介绍一些win系统下常用的快捷键，看看你知道几个？</p>
@@ -80,41 +80,41 @@
 <h1 id="作用于窗口">作用于窗口</h1>
 <h2 id="alt-f4">Alt + F4</h2>
 <p><code>Alt+F4</code> 可以说是非常好用的关闭窗口的快捷键了，但是使用之前记得要保存数据。</p>
-<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io//post-images/alt-f4.gif" alt="alt-f4gif"></figure>
+<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io/post-images/alt-f4.gif" alt="alt-f4gif"></figure>
 <p>除了关闭窗口，它还可以用来关闭系统。</p>
-<figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io//post-images/alt-f4_shutdown.gif" alt="altf4shutdowngif"></figure>
+<figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io/post-images/alt-f4_shutdown.gif" alt="altf4shutdowngif"></figure>
 <h2 id="win">Win + ↑/↓</h2>
 <p><code>Win+↑</code> 与 <code>Win+↓</code> 可以实现窗口的最大化、还原与最小化。</p>
-<figure data-type="image" tabindex="3"><img src="https://luckyhookin.github.io//post-images/win+xiashan.gif" alt="winxiashangif"></figure>
+<figure data-type="image" tabindex="3"><img src="https://luckyhookin.github.io/post-images/win+xiashan.gif" alt="winxiashangif"></figure>
 <h2 id="win-2">Win + ←/→</h2>
 <p><code>Win+←</code> 与 <code>Win+→</code> 可以让几个窗口显示在同一屏，这样就不用频繁切换窗口了。</p>
-<figure data-type="image" tabindex="4"><img src="https://luckyhookin.github.io//post-images/win+zuoyo.gif" alt="winzuoyogif"></figure>
+<figure data-type="image" tabindex="4"><img src="https://luckyhookin.github.io/post-images/win+zuoyo.gif" alt="winzuoyogif"></figure>
 <p>继续用 <code>Win+↑/↓</code> 可以再分屏。</p>
 <h2 id="win-m">Win + M</h2>
 <p>使用 <code>Win+M</code> 可以让所有窗口最小化，直接回到桌面。</p>
-<figure data-type="image" tabindex="5"><img src="https://luckyhookin.github.io//post-images/win-M.gif" alt="winMgif"></figure>
+<figure data-type="image" tabindex="5"><img src="https://luckyhookin.github.io/post-images/win-M.gif" alt="winMgif"></figure>
 <h2 id="win-1~0">Win + 1~0</h2>
 <p>想要精准的切换到快捷启动栏第几个程序，我们只需使用Win+数字键就可以了。</p>
-<figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io//post-images/win-shuz.gif" alt="winshuzgif"></figure>
+<figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io/post-images/win-shuz.gif" alt="winshuzgif"></figure>
 <h1 id="文本编辑">文本编辑</h1>
 <h2 id="ctrl-s">Ctrl + S</h2>
 <p>数据无价，总有一些时候数据还没保存，程序就……所以常按 <code>Ctrl+S</code> 来保存数据是一个好习惯。</p>
-<figure data-type="image" tabindex="7"><img src="https://luckyhookin.github.io//post-images/ctrl-s.gif" alt="ctrlsgif"></figure>
+<figure data-type="image" tabindex="7"><img src="https://luckyhookin.github.io/post-images/ctrl-s.gif" alt="ctrlsgif"></figure>
 <h2 id="ctrl-n">Ctrl + N</h2>
 <p>按下 <code>Ctrl+N</code> 可以新建文档。</p>
-<figure data-type="image" tabindex="8"><img src="https://luckyhookin.github.io//post-images/ctrl-n.gif" alt="ctrlngif"></figure>
+<figure data-type="image" tabindex="8"><img src="https://luckyhookin.github.io/post-images/ctrl-n.gif" alt="ctrlngif"></figure>
 <h2 id="ctrl-o">Ctrl + O</h2>
 <p><code>Ctrl+O</code> 为打开文件的快捷键。</p>
-<figure data-type="image" tabindex="9"><img src="https://luckyhookin.github.io//post-images/ctrl-o.gif" alt="ctrlogif"></figure>
+<figure data-type="image" tabindex="9"><img src="https://luckyhookin.github.io/post-images/ctrl-o.gif" alt="ctrlogif"></figure>
 <h2 id="ctrl-zy">Ctrl + Z/Y</h2>
 <p><code>Ctrl+Z</code> 与 <code>Ctrl+Y</code> 分别代表撤销与重做，有时候不小心碰到了什么键不妨 <code>Ctrl+Z</code> 一下。</p>
-<figure data-type="image" tabindex="10"><img src="https://luckyhookin.github.io//post-images/ctrl-zy.gif" alt="ctrlzygif"></figure>
+<figure data-type="image" tabindex="10"><img src="https://luckyhookin.github.io/post-images/ctrl-zy.gif" alt="ctrlzygif"></figure>
 <h2 id="ctrlfh">Ctrl+F/H</h2>
 <p><code>Ctrl+F</code> 与 <code>Ctrl+H</code> 为查找与替换。</p>
-<figure data-type="image" tabindex="11"><img src="https://luckyhookin.github.io//post-images/ctrl-fh.gif" alt="ctrlfhgif"></figure>
+<figure data-type="image" tabindex="11"><img src="https://luckyhookin.github.io/post-images/ctrl-fh.gif" alt="ctrlfhgif"></figure>
 <h2 id="homeend">Home/End</h2>
 <p><code>Home</code> 键可以让光标跳到行首，<code>End</code> 键可以让光标跳到行尾。</p>
-<figure data-type="image" tabindex="12"><img src="https://luckyhookin.github.io//post-images/homeend.gif" alt="homeendgif"></figure>
+<figure data-type="image" tabindex="12"><img src="https://luckyhookin.github.io/post-images/homeend.gif" alt="homeendgif"></figure>
 <blockquote>
 <p>这篇文章是我上一年暑假时写的，首发于我所在学院的团学公众号，现将它放到这里。这是上半篇。</p>
 </blockquote>
@@ -122,8 +122,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[vuetify 中为非 vuetify 组件添加过渡效果]]></title>
-        <id>https://luckyhookin.github.io//post/vuetify-zhong-wei-fei-vuetify-zu-jian-tian-jia-guo-du-xiao-guo</id>
-        <link href="https://luckyhookin.github.io//post/vuetify-zhong-wei-fei-vuetify-zu-jian-tian-jia-guo-du-xiao-guo">
+        <id>https://luckyhookin.github.io/post/vuetify-zhong-wei-fei-vuetify-zu-jian-tian-jia-guo-du-xiao-guo</id>
+        <link href="https://luckyhookin.github.io/post/vuetify-zhong-wei-fei-vuetify-zu-jian-tian-jia-guo-du-xiao-guo">
         </link>
         <updated>2019-07-26T13:55:40.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -145,7 +145,7 @@
 &lt;/transition&gt;
 </code></pre>
 <p>注意， 这里要使用 <code>mode=&quot;out-in&quot;</code> 这个<a href="https://cn.vuejs.org/v2/guide/transitions.html#%E8%BF%87%E6%B8%A1%E6%A8%A1%E5%BC%8F">过渡模式</a>才能完美过渡。<br>
-<img src="https://luckyhookin.github.io//post-images/1564157286950.gif" alt=""></p>
+<img src="https://luckyhookin.github.io/post-images/1564157286950.gif" alt=""></p>
 ]]></content>
     </entry>
 </feed>
