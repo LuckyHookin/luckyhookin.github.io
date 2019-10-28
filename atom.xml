@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.github.io/</id>
     <title>Lucky Hookin</title>
-    <updated>2019-10-27T06:50:49.350Z</updated>
+    <updated>2019-10-28T10:56:59.402Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.github.io/"/>
     <link rel="self" href="https://luckyhookin.github.io//atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://luckyhookin.github.io//images/avatar.png</logo>
     <icon>https://luckyhookin.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Lucky Hookin</rights>
+    <entry>
+        <title type="html"><![CDATA[这些快捷键你知道几个？（二）]]></title>
+        <id>https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er</id>
+        <link href="https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er">
+        </link>
+        <updated>2019-10-28T08:56:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>这篇我们讲讲<strong>虚拟桌面</strong>相关的快捷键，还有其他几个快捷键。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这篇我们讲讲<strong>虚拟桌面</strong>相关的快捷键，还有其他几个快捷键。</p>
+<!-- more -->
+<h1 id="虚拟桌面">虚拟桌面</h1>
+<h2 id="ctrl-win-d">Ctrl + Win + D</h2>
+<p>按下后新建一个虚拟桌面。</p>
+<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io//post-images/win-c-d.gif" alt="win-c-d.gif"></figure>
+<h2 id="ctrl-win">Ctrl + Win + ←/→</h2>
+<p>这两组快捷键可以对虚拟桌面进行左右切换。</p>
+<figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io//post-images/win-c-zy.gif" alt="win-c-zy.gif"></figure>
+<h2 id="ctrl-win-f4">Ctrl + Win + F4</h2>
+<p>删除虚拟桌面，其中的应用程序和文档会转到附近的桌面中。</p>
+<figure data-type="image" tabindex="3"><img src="https://luckyhookin.github.io//post-images/win-c-f4.gif" alt="win-c-f4.gif"></figure>
+<h1 id="其他">其他</h1>
+<h2 id="ctrl-shift-esc">Ctrl + Shift + Esc</h2>
+<p>这个快捷键可以直接打开任务管理器。</p>
+<figure data-type="image" tabindex="4"><img src="https://luckyhookin.github.io//post-images/ctr+sh+esc.gif" alt="ctr+sh+esc.gif"></figure>
+<h2 id="shift-delete">Shift + Delete</h2>
+<p>这个快捷键可以直接删除文件并且删除的文件不会出现在回收站里，所以删除时要三思~</p>
+<figure data-type="image" tabindex="5"><img src="https://luckyhookin.github.io//post-images/sh+del.gif" alt="sh+del.gif"></figure>
+<h2 id="f2">F2</h2>
+<p>选中文件后按 <code>F2</code> 键可以直接重命名，非常好用。</p>
+<figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io//post-images/f2.gif" alt="f2.gif"></figure>
+<blockquote>
+<p>这篇文章是我上一年暑假时写的，首发于我所在学院的团学公众号，现将它放到这里。这是下半篇。</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[这些快捷键你知道几个？（一）]]></title>
         <id>https://luckyhookin.github.io//post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge</id>
@@ -63,8 +98,7 @@
 <figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io//post-images/win-shuz.gif" alt="winshuzgif"></figure>
 <h1 id="文本编辑">文本编辑</h1>
 <h2 id="ctrl-s">Ctrl + S</h2>
-<p>数据无价，总有一些时候数据还没保存，程序就……<br>
-所以常按 <code>Ctrl+S</code> 来保存数据是一个好习惯。</p>
+<p>数据无价，总有一些时候数据还没保存，程序就……所以常按 <code>Ctrl+S</code> 来保存数据是一个好习惯。</p>
 <figure data-type="image" tabindex="7"><img src="https://luckyhookin.github.io//post-images/ctrl-s.gif" alt="ctrlsgif"></figure>
 <h2 id="ctrl-n">Ctrl + N</h2>
 <p>按下 <code>Ctrl+N</code> 可以新建文档。</p>
@@ -82,7 +116,7 @@
 <p><code>Home</code> 键可以让光标跳到行首，<code>End</code> 键可以让光标跳到行尾。</p>
 <figure data-type="image" tabindex="12"><img src="https://luckyhookin.github.io//post-images/homeend.gif" alt="homeendgif"></figure>
 <blockquote>
-<p>这篇文章是我上一年暑假时写的，首发于我所在学院的团学公众号，现将它放到这里。</p>
+<p>这篇文章是我上一年暑假时写的，首发于我所在学院的团学公众号，现将它放到这里。这是上半篇。</p>
 </blockquote>
 ]]></content>
     </entry>
