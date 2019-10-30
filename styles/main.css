@@ -199,6 +199,7 @@ a:active {
 }
 .header .logo_title {
   text-align: left;
+  z-index: 500;
 }
 .header .logo_title .title img {
   width: 30px;
@@ -632,18 +633,18 @@ a:active {
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
-.animated.hinge {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
+.main-inner {
+  z-index: 1;
+}
+.darkmode-layer,
+.darkmode-toggle {
+  z-index: 2;
 }
 @-webkit-keyframes fadeInDown {
   0% {
@@ -3507,4 +3508,12 @@ a:active {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+figure {
+  line-height: 0px;
+  z-index: 500;
+  isolation: isolate;
+}
+img {
+  z-index: 500;
 }
