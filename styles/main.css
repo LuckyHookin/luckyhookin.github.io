@@ -171,10 +171,8 @@ a:active {
 }
 .reward .reward-code img {
   display: inline-block;
-  float: left;
   width: 150px;
   height: 150px;
-  margin: 0 auto;
   border: 0;
 }
 .reward .reward-code b {
@@ -199,10 +197,10 @@ a:active {
 }
 .header .logo_title {
   text-align: left;
-  z-index: 500;
 }
-.header .logo_title .title img {
+.header .logo_title .title .limg {
   width: 30px;
+  height: 30px;
   margin: 0.7em 0.5em 0 0;
   float: left;
 }
@@ -639,13 +637,6 @@ a:active {
   -o-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
-.main-inner {
-  z-index: 1;
-}
-.darkmode-layer,
-.darkmode-toggle {
-  z-index: 2;
-}
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -773,6 +764,10 @@ a:active {
 .markdown h5,
 .markdown h6 {
   margin: 0.8em 0 0.5em 0;
+}
+.markdown figure {
+  display: inline-block;
+  line-height: 0;
 }
 .markdown img {
   max-width: 100%;
@@ -3509,11 +3504,16 @@ a:active {
   overflow: visible;
   clip: auto;
 }
-figure {
-  line-height: 0px;
+.darkmode-layer,
+.darkmode-toggle {
   z-index: 500;
-  isolation: isolate;
 }
-img {
-  z-index: 500;
+.darkmode--activated img {
+  mix-blend-mode: difference;
+}
+.darkmode--activated figure {
+  mix-blend-mode: difference;
+}
+.darkmode--activated .logo_title .title .limg {
+  visibility: hidden;
 }

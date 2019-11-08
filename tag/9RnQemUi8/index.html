@@ -51,20 +51,12 @@ function pjax() {
   </head>
 
   <body>
-    <div class="header">
-      <div class="logo_title darkmode-ignore">
+    <div class="header animated fadeInDown">
+      <div class="logo_title">
 		  
-        <div class="title animated fadeInDown"><img class="darkmode-ignore" id="img1" style="display:inline-block;" src="https://luckyhookin.github.io/images/avatar.png"/>
-<script>
-var r = 0;
-    window.onload = function(){
-        var current = 0;
-        document.getElementById('img1').onclick = function(){
-            current = (current+90)%360;
-            this.style.transform = 'rotate('+current+'deg)';
-        }
-    };
-</script>
+        <div class="title">
+          <img class="limg" src="https://luckyhookin.github.io/images/avatar.png"/>
+          
           <h1 title="Lucky Hookin" class="weaklink"><a  href="/">Lucky Hookin</a>
 
           </h1>
@@ -103,6 +95,12 @@ var r = 0;
 	  
 
       <div class="clear clear_nav_inline_end"></div>
+<!-- <div class="search">
+    <i class="search-icon fa fa-search search-start"></i>
+    <input type="text" class="search-input" placeholder="Searching..." />
+    <i class="search-icon fa fa-refresh search-clear"></i>
+	<div class="search-results"></div>
+</div> -->
     </div>
 
   </div>
@@ -126,7 +124,7 @@ var r = 0;
 
       </div>
 
-      <div class="hidden_nav animated fadeInDown">
+      <div class="hidden_nav">
 
 <div class="bitcron_nav_container">
 
@@ -232,7 +230,7 @@ var r = 0;
 </style>
 
     <div class="main" id="pjax-container">
-      <div class="main-inner animated fadeInDown">
+      <div class="main-inner">
 
 <div class="content">
 
@@ -326,12 +324,33 @@ var r = 0;
 		本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
 	  
       </div>
+	  
 
     </div>
 
+<script type="text/javascript" src="https://luckyhookin.github.io/media/scripts/darkmode.js"></script>
+<script>
+var options = {
+  bottom: '64px', // default: '32px'
+  right: '32px', // default: '32px'
+  left: 'unset', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#f7f7f7',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: false // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script>
 <script>
 hljs.initHighlightingOnLoad();
 </script>
+
 </body>
 
 </html>
