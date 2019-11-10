@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.github.io</id>
     <title>Lucky Hookin</title>
-    <updated>2019-11-10T03:34:01.052Z</updated>
+    <updated>2019-11-10T03:35:07.595Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.github.io"/>
     <link rel="self" href="https://luckyhookin.github.io/atom.xml"/>
@@ -49,7 +49,7 @@ export default {
           sitekey: self.sitekey,
           callback: self.submit
         });
-      }, 100);
+      }, 200);
     }
   },
   mounted() {
