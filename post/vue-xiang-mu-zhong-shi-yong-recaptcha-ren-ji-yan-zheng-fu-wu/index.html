@@ -407,12 +407,12 @@ export default {
 <h2 id="后端验证">后端验证</h2>
 <pre><code class="language-js">let res = await axios
 .get(&quot;https://recaptcha.net/recaptcha/api/siteverify&quot;, {
-                params: {
-                    secret: &quot;6LdFp74UXXXXXXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXX&quot;,
-                    response: ctx.query.token
-                }
-            });
-        ctx.body = res.data;
+  params: {
+    secret: &quot;6LdFp74UXXXXXXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXX&quot;,
+    response: ctx.query.token
+  }
+});
+ctx.body = res.data;
 </code></pre>
 <p>参数：</p>
 <ul>
