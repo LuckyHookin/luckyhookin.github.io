@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.github.io</id>
     <title>Lucky Hookin</title>
-    <updated>2019-11-10T03:35:07.595Z</updated>
+    <updated>2019-11-10T03:37:55.679Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.github.io"/>
     <link rel="self" href="https://luckyhookin.github.io/atom.xml"/>
@@ -16,7 +16,10 @@
         <link href="https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu">
         </link>
         <updated>2019-11-08T07:43:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。</p>
+<!-- more -->
 <h1 id="recaptcha-v2">reCAPTCHA v2</h1>
 <p>首先，你需要在 <code>./public/index.html</code> 中添加下面这段代码：</p>
 <pre><code class="language-js">&lt;script src=&quot;https://www.google.com/recaptcha/api.js?render=explicit&quot; async defer&gt;&lt;/script&gt;
@@ -87,7 +90,6 @@ export default {
 <p>将接收到的 <code>token</code> 传到后端即可。</p>
 <pre><code class="language-js">this.axios
           .get('http://localhost:3000/login', {
-
             params: token
           })
           .then(function(response) {
@@ -102,7 +104,6 @@ export default {
 .get(&quot;https://recaptcha.net/recaptcha/api/siteverify&quot;, {
                 params: {
                     secret: &quot;6LdFp74UXXXXXXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXX&quot;,
-
                     response: ctx.query.token
                 }
             });

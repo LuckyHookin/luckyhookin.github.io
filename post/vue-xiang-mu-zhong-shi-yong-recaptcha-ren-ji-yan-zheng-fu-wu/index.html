@@ -306,8 +306,10 @@ function change(){
 &nbsp
 <i class="fa fa-share"></i>
 <a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu"><i class="fa fa-qrcode"></i></a>
-<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu&sharesource=qzone&title=Vue 项目中使用 reCAPTCHA 人机验证服务&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
-<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu&sharesource=weibo&title=Vue 项目中使用 reCAPTCHA 人机验证服务 + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
+<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu&sharesource=qzone&title=Vue 项目中使用 reCAPTCHA 人机验证服务&pics=https://blog.blinkstar.cn/images/avatar.png&summary=&lt;p&gt;在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。&lt;/p&gt;
+"><i class="fa fa-qq"></i></a>
+<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu&sharesource=weibo&title=Vue 项目中使用 reCAPTCHA 人机验证服务 + " - " + &lt;p&gt;在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。&lt;/p&gt;
+&pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
 &nbsp
 &nbsp
 <a id="daxiao" href="javascript:void(0);" onclick="change();" title="调整字体大小"><i class="fa fa-font"></i></a>
@@ -322,6 +324,7 @@ function change(){
   <img id="mememe" src="//source.unsplash.com/800x400/?arts,weather">
     <div name="show" id="show">
 	<p class="md_block"><span class="md_line md_line_start md_line_end"><p>在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。</p>
+<!-- more -->
 <h1 id="recaptcha-v2">reCAPTCHA v2</h1>
 <p>首先，你需要在 <code>./public/index.html</code> 中添加下面这段代码：</p>
 <pre><code class="language-js">&lt;script src=&quot;https://www.google.com/recaptcha/api.js?render=explicit&quot; async defer&gt;&lt;/script&gt;
@@ -392,7 +395,6 @@ export default {
 <p>将接收到的 <code>token</code> 传到后端即可。</p>
 <pre><code class="language-js">this.axios
           .get('http://localhost:3000/login', {
-
             params: token
           })
           .then(function(response) {
@@ -407,7 +409,6 @@ export default {
 .get(&quot;https://recaptcha.net/recaptcha/api/siteverify&quot;, {
                 params: {
                     secret: &quot;6LdFp74UXXXXXXXXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXXX&quot;,
-
                     response: ctx.query.token
                 }
             });
