@@ -177,7 +177,6 @@ a:active {
   padding: 0;
   -webkit-user-select: none;
   text-align: center;
-  vertical-align: middle;
   color: #fff;
   border: 1px solid #f1b60e;
   border-radius: 50%;
@@ -189,11 +188,9 @@ a:active {
 .reward .reward-code {
   position: absolute;
   top: -220px;
-  left: 50%;
+  left: -100%;
   display: none;
-  width: 350px;
   height: 200px;
-  margin-left: -175px;
   padding: 15px;
   border: 1px solid #e6e6e6;
   background: #fff;
@@ -207,21 +204,10 @@ a:active {
   width: 150px;
   height: 150px;
 }
-.reward .reward-code span.alipay-code {
-  float: left;
-}
-.reward .reward-code span.alipay-code a {
-  padding: 0;
-}
-.reward .reward-code span.wechat-code {
-  float: right;
-}
 .reward .reward-code img {
   display: inline-block;
-  float: left;
   width: 150px;
   height: 150px;
-  margin: 0 auto;
   border: 0;
 }
 .reward .reward-code b {
@@ -236,24 +222,6 @@ a:active {
   line-height: 2rem;
   margin-top: -1rem;
   color: #999;
-}
-.reward .reward-code:after,
-.reward .reward-code:before {
-  position: absolute;
-  content: '';
-  border: 10px solid transparent;
-}
-.reward .reward-code:after {
-  bottom: -19px;
-  left: 50%;
-  margin-left: -10px;
-  border-top-color: #fff;
-}
-.reward .reward-code:before {
-  bottom: -20px;
-  left: 50%;
-  margin-left: -10px;
-  border-top-color: #e6e6e6;
 }
 .header {
   max-width: 800px;
@@ -719,18 +687,11 @@ figcaption {
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-}
-.animated.hinge {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 @-webkit-keyframes fadeInDown {
   0% {
@@ -4576,4 +4537,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -moz-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   -o-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+}
+.darkmode--activated #img1 {
+  visibility: hidden;
+}
+.markdown figure {
+  display: inline-block;
+  line-height: 0;
+}
+.markdown img {
+  max-width: 100%;
+  height: auto;
 }
