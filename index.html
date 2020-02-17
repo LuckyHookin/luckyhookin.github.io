@@ -20,46 +20,31 @@
 <script type="text/javascript" src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 <script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 <script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script type="text/javascript">
-$(document).pjax('a[target!=_blank]', '#pjax-container', {
-	fragment: '#pjax-container',
-	timeout: 5000,
-	cache: false
-});
-$(document).on('pjax:complete', function(){  	
-	pjax();
-});
-
-$(window).on('popstate.pjax', function () {
-	pjax();
-})
-
-function pjax() {
-	$.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
-
-	if (("#gitalk-container").length > 0 ) {
-	$('#mememe').attr('src','//source.unsplash.com/800x400/?arts,weather?'+Math.random());
-	$.getScript("//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js");
-	$.getScript("//cdn.bootcss.com/KaTeX/0.10.2/contrib/auto-render.min.js");
-	$('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-    	});
-	}
-}
-</script>
+<script type="text/javascript" src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery.min.js"></script>
+<script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.js"></script>
 
   </head>
 
   <body>
-    <div class="header animated fadeInDown">
+    <div class="header">
       <div class="logo_title">
 		  
-        <div class="title">
-          <img class="limg" src="https://luckyhookin.github.io/images/avatar.png"/>
-          
+        <div class="title animated fadeInDown"><img id="img1" alt="logo" style="display:inline-block;" src="https://luckyhookin.github.io/images/avatar.png"/>
+<script>
+var r = 0;
+    window.onload = function(){
+        var current = 0;
+        document.getElementById('img1').onclick = function(){
+            current = (current+90)%360;
+            this.style.transform = 'rotate('+current+'deg)';
+        }
+    };
+</script>
+
           <h1 title="Lucky Hookin" class="weaklink"><a  href="/">Lucky Hookin</a>
 
           </h1>
+	  
 
           <div class="navbar weaklink">
             <div class="normal_nav">
@@ -95,12 +80,6 @@ function pjax() {
 	  
 
       <div class="clear clear_nav_inline_end"></div>
-<!-- <div class="search">
-    <i class="search-icon fa fa-search search-start"></i>
-    <input type="text" class="search-input" placeholder="Searching..." />
-    <i class="search-icon fa fa-refresh search-clear"></i>
-	<div class="search-results"></div>
-</div> -->
     </div>
 
   </div>
@@ -124,7 +103,7 @@ function pjax() {
 
       </div>
 
-      <div class="hidden_nav">
+      <div class="hidden_nav animated fadeInDown">
 
 <div class="bitcron_nav_container">
 
@@ -172,66 +151,11 @@ function pjax() {
 
     </div>
 
-<style type="text/css">
-.search {
-    position: relative;
-    height: 30px;
-    text-align: right;
-    line-height: 30px;
-    padding-right: 10px;
-}
 
-.search .search-icon {
-    float: right;
-    height: 100%;
-    margin: 0 10px;
-    line-height: 30px;
-    cursor: pointer;
-    user-select: none;
-}
 
-.search .search-input {
-    float: right;
-    width: 30%;
-    height: 30px;
-    line-height: 30px;
-    margin: 0;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.search .search-clear {
-    display: none;
-}
-
-.search .search-results {
-    display: block;
-    z-index: 1000;
-    position: absolute;
-    top: 30px;
-    right: 50px;
-    width: 50%;
-    max-height: 400px;
-    overflow: auto;
-    text-align: left;
-    border-radius: 5px;
-    box-shadow: 0 .3rem .5rem #333;
-}
-
-.search .search-results .result-item {
-    color: #000;
-    margin: 5px;
-    padding: 3px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-</style>
 
     <div class="main" id="pjax-container">
-      
-      <div class="main-inner animated fadeInDown">
+      <div class="main-inner">
 
 <div class="content">
 
@@ -252,20 +176,29 @@ function pjax() {
 </p></div></div>
   <a class="pure-button" href="https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu">Read More >>> </a>
   <div class="post_footer">
-    <div class="info weaklink"><i class="fa fa-clock-o"></i>
-<span class="date_info">2019-11-08</span>
-
-<i class="fa fa-bookmark-o"></i>
-	
-<span class="tags_info weaklink">
-	
-
-</span>
-
-<span>3 min read</span>
-
-
-    </div>
+<div class="info weaklink">
+	<i class="fa fa-calendar">
+	</i>
+	<span class="date_info">
+		2019-11-08
+	</span>
+	<i class="fa fa-bookmark-o">
+	</i>
+	<span class="tags_info weaklink">
+		
+	</span>
+	<i class="fa fa-anchor">
+	</i>
+	<span class="weaklink" style="margin-right:15px;">
+		472
+			字
+	</span>
+	<i class="fa fa-clock-o">
+	</i>
+	<span class="weaklink" style="margin-right:15px;">
+		3 min read
+	</span>
+</div>
 
   </div>
 
@@ -282,20 +215,29 @@ function pjax() {
 </p></div></div>
   <a class="pure-button" href="https://luckyhookin.github.io/post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er">Read More >>> </a>
   <div class="post_footer">
-    <div class="info weaklink"><i class="fa fa-clock-o"></i>
-<span class="date_info">2019-10-28</span>
-
-<i class="fa fa-bookmark-o"></i>
-	
-<span class="tags_info weaklink">
-	
-
-</span>
-
-<span>1 min read</span>
-
-
-    </div>
+<div class="info weaklink">
+	<i class="fa fa-calendar">
+	</i>
+	<span class="date_info">
+		2019-10-28
+	</span>
+	<i class="fa fa-bookmark-o">
+	</i>
+	<span class="tags_info weaklink">
+		
+	</span>
+	<i class="fa fa-anchor">
+	</i>
+	<span class="weaklink" style="margin-right:15px;">
+		212
+			字
+	</span>
+	<i class="fa fa-clock-o">
+	</i>
+	<span class="weaklink" style="margin-right:15px;">
+		1 min read
+	</span>
+</div>
 
   </div>
 
@@ -312,23 +254,33 @@ function pjax() {
 </p></div></div>
   <a class="pure-button" href="https://luckyhookin.github.io/post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge">Read More >>> </a>
   <div class="post_footer">
-    <div class="info weaklink"><i class="fa fa-clock-o"></i>
-<span class="date_info">2019-10-26</span>
-
-<i class="fa fa-bookmark-o"></i>
-	
-<span class="tags_info weaklink">
-	
-	<a href="https://luckyhookin.github.io/tag/bA5-ZPbbz" class="tag">快捷键</a>
-
-
-
-</span>
-
-<span>2 min read</span>
-
-
-    </div>
+<div class="info weaklink">
+	<i class="fa fa-calendar">
+	</i>
+	<span class="date_info">
+		2019-10-26
+	</span>
+	<i class="fa fa-bookmark-o">
+	</i>
+	<span class="tags_info weaklink">
+		
+			<a href="https://luckyhookin.github.io/tag/bA5-ZPbbz" class="tag">
+				快捷键
+			</a>
+			
+	</span>
+	<i class="fa fa-anchor">
+	</i>
+	<span class="weaklink" style="margin-right:15px;">
+		468
+			字
+	</span>
+	<i class="fa fa-clock-o">
+	</i>
+	<span class="weaklink" style="margin-right:15px;">
+		2 min read
+	</span>
+</div>
 
   </div>
 
@@ -344,23 +296,33 @@ function pjax() {
   <div class="post_content markdown"><div class="p_part"><p></p></div></div>
   <a class="pure-button" href="https://luckyhookin.github.io/post/vuetify-zhong-wei-fei-vuetify-zu-jian-tian-jia-guo-du-xiao-guo">Read More >>> </a>
   <div class="post_footer">
-    <div class="info weaklink"><i class="fa fa-clock-o"></i>
-<span class="date_info">2019-07-26</span>
-
-<i class="fa fa-bookmark-o"></i>
-	
-<span class="tags_info weaklink">
-	
-	<a href="https://luckyhookin.github.io/tag/9RnQemUi8" class="tag">vuetify</a>
-
-
-
-</span>
-
-<span>1 min read</span>
-
-
-    </div>
+<div class="info weaklink">
+	<i class="fa fa-calendar">
+	</i>
+	<span class="date_info">
+		2019-07-26
+	</span>
+	<i class="fa fa-bookmark-o">
+	</i>
+	<span class="tags_info weaklink">
+		
+			<a href="https://luckyhookin.github.io/tag/9RnQemUi8" class="tag">
+				vuetify
+			</a>
+			
+	</span>
+	<i class="fa fa-anchor">
+	</i>
+	<span class="weaklink" style="margin-right:15px;">
+		182
+			字
+	</span>
+	<i class="fa fa-clock-o">
+	</i>
+	<span class="weaklink" style="margin-right:15px;">
+		1 min read
+	</span>
+</div>
 
   </div>
 
@@ -415,37 +377,35 @@ function pjax() {
 		document.write("Copyright © "+year+" " + "Lucky Hookin. ");
 		</script>
 		Powered by Gridea.
-
+		<br>
+		本站已稳定运行了
+		<strong><script type="text/javascript">
+		var urodz= new Date("10/28/2018");
+		var now = new Date();
+		var ile = now.getTime() - urodz.getTime();
+		var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+		document.write(+dni)
+		</script>
+		</strong>天
 		<br>
 		本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
 	  
       </div>
-	  
+	  <img src="https://luckyhookin.github.io/media/images/font.svg">
 
     </div>
 
+<script type="text/javascript" src="https://luckyhookin.github.io/media/scripts/love.js"></script>
 <script type="text/javascript" src="https://luckyhookin.github.io/media/scripts/darkmode.js"></script>
 <script>
-var options = {
-  bottom: '64px', // default: '32px'
-  right: '32px', // default: '32px'
-  left: 'unset', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#f7f7f7',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: false // default: true
-}
-
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
+new Darkmode({label: '🌓',backgroundColor: '#f7f7f7',time: '0.5s'}).showWidget();
+console.clear();
+console.log("\n %c \u26a1Theme: Bitcron-pro Author's Blog:https://blog.blinkstar.cn  Writen By Serence  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
 </script>
 <script>
 hljs.initHighlightingOnLoad();
 </script>
+
 
 </body>
 

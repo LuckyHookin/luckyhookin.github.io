@@ -20,46 +20,30 @@
 <script type="text/javascript" src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 <script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 <script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script type="text/javascript">
-$(document).pjax('a[target!=_blank]', '#pjax-container', {
-	fragment: '#pjax-container',
-	timeout: 5000,
-	cache: false
-});
-$(document).on('pjax:complete', function(){  	
-	pjax();
-});
-
-$(window).on('popstate.pjax', function () {
-	pjax();
-})
-
-function pjax() {
-	$.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
-
-	if (("#gitalk-container").length > 0 ) {
-	$('#mememe').attr('src','//source.unsplash.com/800x400/?arts,weather?'+Math.random());
-	$.getScript("//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js");
-	$.getScript("//cdn.bootcss.com/KaTeX/0.10.2/contrib/auto-render.min.js");
-	$('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-    	});
-	}
-}
-</script>
+<script type="text/javascript" src="https://cdn.bootcss.com/lightgallery/1.6.12/js/lightgallery.min.js"></script>
+<script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.js"></script>
 
   </head>
-
   <body>
-     <div class="header animated fadeInDown">
+     <div class="header">
       <div class="logo_title">
 		  
-        <div class="title">
-          <img class="limg" src="https://luckyhookin.github.io/images/avatar.png"/>
-          
+        <div class="title animated fadeInDown"><img id="img1" alt="logo" style="display:inline-block;" src="https://luckyhookin.github.io/images/avatar.png"/>
+<script>
+var r = 0;
+    window.onload = function(){
+        var current = 0;
+        document.getElementById('img1').onclick = function(){
+            current = (current+90)%360;
+            this.style.transform = 'rotate('+current+'deg)';
+        }
+    };
+</script>
+
           <h1 title="Lucky Hookin" class="weaklink"><a  href="/">Lucky Hookin</a>
 
           </h1>
+	  
 
           <div class="navbar weaklink">
             <div class="normal_nav">
@@ -95,12 +79,6 @@ function pjax() {
 	  
 
       <div class="clear clear_nav_inline_end"></div>
-<!-- <div class="search">
-    <i class="search-icon fa fa-search search-start"></i>
-    <input type="text" class="search-input" placeholder="Searching..." />
-    <i class="search-icon fa fa-refresh search-clear"></i>
-	<div class="search-results"></div>
-</div> -->
     </div>
 
   </div>
@@ -124,7 +102,7 @@ function pjax() {
 
       </div>
 
-      <div class="hidden_nav">
+      <div class="hidden_nav animated fadeInDown">
 
 <div class="bitcron_nav_container">
 
@@ -172,85 +150,18 @@ function pjax() {
 
     </div>
 
-<style type="text/css">
-.search {
-    position: relative;
-    height: 30px;
-    text-align: right;
-    line-height: 30px;
-    padding-right: 10px;
-}
 
-.search .search-icon {
-    float: right;
-    height: 100%;
-    margin: 0 10px;
-    line-height: 30px;
-    cursor: pointer;
-    user-select: none;
-}
 
-.search .search-input {
-    float: right;
-    width: 30%;
-    height: 30px;
-    line-height: 30px;
-    margin: 0;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.search .search-clear {
-    display: none;
-}
-
-.search .search-results {
-    display: block;
-    z-index: 1000;
-    position: absolute;
-    top: 30px;
-    right: 50px;
-    width: 50%;
-    max-height: 400px;
-    overflow: auto;
-    text-align: left;
-    border-radius: 5px;
-    box-shadow: 0 .3rem .5rem #333;
-}
-
-.search .search-results .result-item {
-    color: #000;
-    margin: 5px;
-    padding: 3px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-</style>
 
     <div class="main" id="pjax-container">
-      <div class="main-inner animated fadeInDown">
-
-
+      <div class="main-inner">
 <div class="content">
-
-
-
-
-
-
-  <div class="post_page" >
-
+<div class="post_page" >
 <div class="post">
   <div class="post_title sm_margin">
     <h2><a>关于</a>
-
-
-
     </h2>
   </div>
-  
 <script>
 function lan(){
 	if (document.getElementById("lan").innerText == "繁"){
@@ -288,50 +199,52 @@ function change(){
     document.getElementById("show").style.fontSize = num - rand +'px';
 }
 </script>
-
   <div class="post_details">
-    <div class="info"><i class="fa fa-clock-o"></i>
+    <div class="info"><i class="fa fa-calendar"></i>
 <span class="date_info">2019-01-25</span>
 <i class="fa fa-eye"></i>
-
 <span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
-
 <i class="fa fa-bookmark-o"></i>
 <span class="tags_info weaklink">
 	
-
 </span>
-<span>1 min read</span>
-&nbsp
-&nbsp
+<i class="fa fa-anchor"></i>
+<span style="margin-right:15px">
+47字
+</span>
+<i class="fa fa-clock-o"></i>
+<span style="margin-right:15px">
+1 min read
+</span>
+<span style="margin-right:15px">
 <i class="fa fa-share"></i>
 <a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://luckyhookin.github.io/post/about"><i class="fa fa-qrcode"></i></a>
 <a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://luckyhookin.github.io/post/about&sharesource=qzone&title=关于&pics=https://blog.blinkstar.cn/images/avatar.png&summary="><i class="fa fa-qq"></i></a>
 <a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://luckyhookin.github.io/post/about&sharesource=weibo&title=关于 + " - " + &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
-&nbsp
-&nbsp
+</span>
+<span style="margin-right:15px">
 <a id="daxiao" href="javascript:void(0);" onclick="change();" title="调整字体大小"><i class="fa fa-font"></i></a>
-&nbsp
-&nbsp
+</span>
+<span style="margin-right:15px">
 <a id="lan" href="javascript:void(0);" onclick="lan();" title="调整简繁体">繁</a>
+</span>
 </div>
   </div>
 
-  <div class="post_content markdown">
-  &nbsp
-  <img id="mememe" src="//source.unsplash.com/800x400/?arts,weather">
+    <div class="post_content markdown">
+	
+	<img id="mememe" alt="featureimg" src="//source.unsplash.com/800x400/?arts,weather">
+	
     <div name="show" id="show">
 	<p class="md_block"><span class="md_line md_line_start md_line_end"><p>我是 Hookin，一位软件工程专业在校大学生，虽然学校教的是 Java，但我也喜欢前端技术。我会在这里分享学到的各种东西。</p>
-</span></p></div>
+</span></p></div><div id = "warn"></div>
 	<br>
 	<hr>
 <div style="color: #ccc;font-size:14px;"><i class="fa fa-user"></i>本文由<a rel="license" href="/">Lucky Hookin</a>创作</div>	
 <div style="color: #ccc;font-size:14px;"><i class="fa fa-cc"></i>该文章采用<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。转载请注明出处！</div>
 <div style="color: #ccc;font-size:14px;"><i class="fa fa-clock-o"></i>发布时间为：2019-01-25</div>    
-	 <p class="md_block">
-    <div class="reward"><div class="reward-button">赏 <span class="reward-code"><span class="wechat-code"> <img class="wechat-img" src="https://luckyhookin.github.io/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+<div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" alt = "support" src="https://luckyhookin.github.io/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img alt ="support" class="wechat-img" src="https://luckyhookin.github.io/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
 <div style="text-align:center;color: #ccc;font-size:14px;">如果觉得这篇文章对您有帮助，可以请作者喝一杯饮料哦🥤</div>    
-</p> 
 </div>
 </div>
 
@@ -345,20 +258,7 @@ function change(){
 	display: inline-block;
 	border-radius:5px; 
 }
-
 </style>
-
-<script>
-var link = "" ;
-$("img").each( (i,o) => {
-	var o = $(o);
-	if( o.attr("src").indexOf("sinaimg") > 0 || o.attr("src").indexOf("qpic") > 0 || o.attr("src").indexOf("baidu") > 0 || o.attr("src").indexOf("sinaimg") > 0){
-		o.attr("referrerpolicy","no-referrer");
-		link = o.attr("src");
-		o.attr("src",link);
-	}
-});
-</script>
 
 <div style="width:100%;overflow:hidden">
 
@@ -369,13 +269,34 @@ $("img").each( (i,o) => {
 <div class="doc_comments">
 
 </div>
-
+<script>
+var link="";$("img").each((i,o)=>{var o=$(o);if(o.attr("src").indexOf("sinaimg")>0||o.attr("src").indexOf("qpic")>0||o.attr("src").indexOf("baidu")>0||o.attr("src").indexOf("sinaimg")>0){o.attr("referrerpolicy","no-referrer");link=o.attr("src");o.attr("src",link);}});
+imgList = document.querySelectorAll('.md_block img')
+imgList.forEach(img => {
+  if (img.alt !== "logo" && img.alt !== "featureimg"){
+  let div1 = document.createElement('div')
+  let div = document.createElement('div')
+  div.className='back';
+  div.setAttribute("data-src",img.src)
+  var figuration = document.createElement("figcaption")
+  figuration.innerHTML = '<a href="' + img.src + '">' + img.alt + '</a>'
+  img.replaceWith(div1)
+  div1.appendChild(div)
+  div.appendChild(img)
+  div1.appendChild(figuration)}
+})
+$('img').on('error',function(){$(this).prop('src','https://luckyhookin.github.io/media/images/broken.jpg')});$(".md_block a").attr("rel","external nofollow");$("a[rel='external nofollow']").attr("target","_blank");$("a[href^='#']").removeAttr("target");$("a.ex").removeAttr("rel");$("a.ex").removeAttr("target");
+content="<div class='warn'>本文最后更新于2019-01-25，已超过 1 年没有更新，涉及的内容可能已经失效！</div>";var date1="2019-01-25 19:09:48";date1=date1.replace("-","/");var date2=new Date();var date3=date2.getTime()-new Date(date1).getTime();var days=Math.floor(date3/(24*3600*1000));if(days>=365){document.getElementById("warn").innerHTML=content};
+$('#pjax-container').lightGallery({
+    selector: '.back'
+});
+</script>
   </div>
 </div>
 
 
       </div>
-<div class="toc-container animated fadeInDown">
+<div class="toc">
 
 </div>
     </div>
@@ -407,37 +328,35 @@ $("img").each( (i,o) => {
 		document.write("Copyright © "+year+" " + "Lucky Hookin. ");
 		</script>
 		Powered by Gridea.
-
+		<br>
+		本站已稳定运行了
+		<strong><script type="text/javascript">
+		var urodz= new Date("10/28/2018");
+		var now = new Date();
+		var ile = now.getTime() - urodz.getTime();
+		var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+		document.write(+dni)
+		</script>
+		</strong>天
 		<br>
 		本站总访问量为 <strong><span id="busuanzi_value_site_uv"></span></strong> 次
 	  
       </div>
-	  
+	  <img src="https://luckyhookin.github.io/media/images/font.svg">
 
     </div>
 
+<script type="text/javascript" src="https://luckyhookin.github.io/media/scripts/love.js"></script>
 <script type="text/javascript" src="https://luckyhookin.github.io/media/scripts/darkmode.js"></script>
 <script>
-var options = {
-  bottom: '64px', // default: '32px'
-  right: '32px', // default: '32px'
-  left: 'unset', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#f7f7f7',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: false // default: true
-}
-
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
+new Darkmode({label: '🌓',backgroundColor: '#f7f7f7',time: '0.5s'}).showWidget();
+console.clear();
+console.log("\n %c \u26a1Theme: Bitcron-pro Author's Blog:https://blog.blinkstar.cn  Writen By Serence  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;", );
 </script>
 <script>
 hljs.initHighlightingOnLoad();
 </script>
+
 
 </body>
 
