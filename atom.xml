@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.github.io</id>
     <title>Lucky Hookin</title>
-    <updated>2020-03-18T15:40:21.219Z</updated>
+    <updated>2020-03-18T15:45:47.208Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.github.io"/>
     <link rel="self" href="https://luckyhookin.github.io/atom.xml"/>
@@ -59,7 +59,7 @@ pause
 <p>它会让你登录：</p>
 <figure data-type="image" tabindex="7"><img src="https://luckyhookin.github.io/post-images/2020-03-16-22-36-42-image.png" alt="" loading="lazy"></figure>
 <p>去官网注册一下就行。</p>
-<h1 id="配置-docker-desktop">配置 Docker Desktop</h1>
+<h1 id="三-配置-docker-desktop">三、配置 Docker Desktop</h1>
 <h2 id="修改镜像文件地址">修改镜像文件地址</h2>
 <p>Docker 的镜像文件默认是存放到系统盘的，如果你的系统盘像这样：</p>
 <figure data-type="image" tabindex="8"><img src="https://luckyhookin.github.io/post-images/2020-03-18-22-14-13-image.png" alt="" loading="lazy"></figure>
@@ -81,7 +81,7 @@ pause
   &quot;experimental&quot;: false
 }
 </code></pre>
-<h1 id="入门教程">入门教程</h1>
+<h1 id="四-入门教程">四、入门教程</h1>
 <p>推荐图雀社区的：<a href="http://tuture.co/2020/01/01/442cc8d/">一杯茶的时间，上手 Docker | 图雀社区</a></p>
 <p>鸣谢：</p>
 <p><a href="https://www.cnblogs.com/samwu/p/10360943.html">win10家庭版安装Docker for Windows - 草珊瑚 - 博客园</a></p>
