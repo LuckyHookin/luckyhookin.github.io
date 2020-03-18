@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.github.io</id>
     <title>Lucky Hookin</title>
-    <updated>2020-03-18T15:36:40.547Z</updated>
+    <updated>2020-03-18T15:40:21.219Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.github.io"/>
     <link rel="self" href="https://luckyhookin.github.io/atom.xml"/>
@@ -16,9 +16,9 @@
         <link href="https://luckyhookin.github.io/post/win10-jia-ting-ban-an-zhuang-docker-desktop-ji-lu/">
         </link>
         <updated>2020-03-16T15:51:10.000Z</updated>
-        <summary type="html"><![CDATA[<p>Docker Desktop 原本是给 win10 专业版用的，但我在网上查了下，我们家庭版在简单操作后也能装。</p>
+        <summary type="html"><![CDATA[<p>Docker Desktop 原本只能在 win10 专业版上安装，但我在网上查了下，我们家庭版在简单操作后也能装。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>Docker Desktop 原本是给 win10 专业版用的，但我在网上查了下，我们家庭版在简单操作后也能装。</p>
+        <content type="html"><![CDATA[<p>Docker Desktop 原本只能在 win10 专业版上安装，但我在网上查了下，我们家庭版在简单操作后也能装。</p>
 <!-- more -->
 <h1 id="一-开启-hyper-v">一、开启 Hyper-V</h1>
 <p>win10 家庭版不带 Hyper-V，不过可以通过一段代码开启：</p>
