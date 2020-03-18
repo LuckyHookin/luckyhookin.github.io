@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.github.io</id>
     <title>Lucky Hookin</title>
-    <updated>2020-03-16T13:48:57.269Z</updated>
+    <updated>2020-03-18T15:17:05.617Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.github.io"/>
     <link rel="self" href="https://luckyhookin.github.io/atom.xml"/>
@@ -10,6 +10,81 @@
     <logo>https://luckyhookin.github.io/images/avatar.png</logo>
     <icon>https://luckyhookin.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Lucky Hookin</rights>
+    <entry>
+        <title type="html"><![CDATA[win10 家庭版安装 Docker Desktop 记录]]></title>
+        <id>https://luckyhookin.github.io/post/win10-jia-ting-ban-an-zhuang-docker-desktop-ji-lu/</id>
+        <link href="https://luckyhookin.github.io/post/win10-jia-ting-ban-an-zhuang-docker-desktop-ji-lu/">
+        </link>
+        <updated>2020-03-16T15:51:10.000Z</updated>
+        <content type="html"><![CDATA[<p>Docker Desktop 原本是给 win10 专业版用的，但我在网上查了下，我们家庭版在简单操作后也能装。</p>
+<h1 id="一-开启-hyper-v">一、开启 Hyper-V</h1>
+<p>win10 家庭版不带 Hyper-V，不过可以通过一段代码开启：</p>
+<pre><code class="language-bash">pushd &quot;%~dp0&quot;
+dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt
+for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;
+del hyper-v.txt
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL
+</code></pre>
+<p>可能在安装 Docker Desktop 时报错：</p>
+<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io/post-images/2020-03-18-22-58-00-image.png" alt="" loading="lazy"></figure>
+<p>所以最好也执行一下这段代码：</p>
+<pre><code class="language-bash">pushd &quot;%~dp0&quot;
+dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt
+for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;
+del containers.txt
+Dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL
+pause
+</code></pre>
+<p>新建两个 <code>.txt</code> 文本文件，分别复制上面的代码进去，改成 <code>.cmd</code> 文件后都要<strong>以管理员身份运行</strong>：</p>
+<figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io/post-images/2020-03-16-22-16-59-image.png" alt="" loading="lazy"></figure>
+<p>等待操作完成，重启电脑。</p>
+<p>在控制面版上找到 Hyper-V 并启用：</p>
+<figure data-type="image" tabindex="3"><img src="https://luckyhookin.github.io/post-images/2020-03-16-22-22-04-image.png" alt="" loading="lazy"></figure>
+<h1 id="二-安装-docker-desktop">二、安装 Docker Desktop</h1>
+<p>以管理员身份运行 CMD，执行这段命令：</p>
+<pre><code class="language-bash">REG ADD &quot;HKEY_LOCAL_MACHINE\software\Microsoft\Windows NT\CurrentVersion&quot; /v EditionId /T REG_EXPAND_SZ /d Professional /F
+</code></pre>
+<p>打开网站：<a href="https://www.docker.com/products/docker-desktop">https://www.docker.com/products/docker-desktop</a></p>
+<p>按照提示操作；或者点击：<a href="https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe">https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe</a></p>
+<p>直接下载。注意：速度较慢。</p>
+<p>下载完成后，运行安装程序，要等一小会它才能弹出窗口：</p>
+<figure data-type="image" tabindex="4"><img src="https://luckyhookin.github.io/post-images/2020-03-16-22-32-48-image.png" alt="" loading="lazy"></figure>
+<p>基本上一直下一步就行了，但要注意系统盘要留足空间，不然：</p>
+<figure data-type="image" tabindex="5"><img src="https://luckyhookin.github.io/post-images/2020-03-16-22-35-49-image.png" alt="" loading="lazy"></figure>
+<p>安装完成后运行，稍等片刻弹出成功运行提示：</p>
+<figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io/post-images/2020-03-16-22-47-14-image.png" alt="" loading="lazy"></figure>
+<p>它会让你登录：</p>
+<figure data-type="image" tabindex="7"><img src="https://luckyhookin.github.io/post-images/2020-03-16-22-36-42-image.png" alt="" loading="lazy"></figure>
+<p>去官网注册一下就行。</p>
+<h1 id="配置-docker-desktop">配置 Docker Desktop</h1>
+<h2 id="修改镜像文件地址">修改镜像文件地址</h2>
+<p>Docker 的镜像文件默认是存放到系统盘的，如果你的系统盘像这样：</p>
+<figure data-type="image" tabindex="8"><img src="https://luckyhookin.github.io/post-images/2020-03-18-22-14-13-image.png" alt="" loading="lazy"></figure>
+<p>那你就要考虑把镜像文件搬到其他盘了。</p>
+<p>在托盘的 Docker 图标上右键，点击 <code>Settings</code>：</p>
+<figure data-type="image" tabindex="9"><img src="https://luckyhookin.github.io/post-images/2020-03-18-22-20-59-image.png" alt="" loading="lazy"></figure>
+<p>弹出 Settings 窗口：</p>
+<figure data-type="image" tabindex="10"><img src="https://luckyhookin.github.io/post-images/2020-03-18-22-27-28-image.png" alt="" loading="lazy"></figure>
+<p>按箭头提示修改即可。</p>
+<h2 id="替换国内镜像源">替换国内镜像源</h2>
+<p>替换为国内的镜像源，镜像的下载速度会快一些：</p>
+<figure data-type="image" tabindex="11"><img src="https://luckyhookin.github.io/post-images/2020-03-18-22-33-23-image.png" alt="" loading="lazy"></figure>
+<pre><code class="language-json">{
+  &quot;registry-mirrors&quot;: [
+    &quot;https://registry.docker-cn.com&quot;
+  ],
+  &quot;insecure-registries&quot;: [],
+  &quot;debug&quot;: true,
+  &quot;experimental&quot;: false
+}
+</code></pre>
+<h1 id="入门教程">入门教程</h1>
+<p>推荐图雀社区的：<a href="http://tuture.co/2020/01/01/442cc8d/">一杯茶的时间，上手 Docker | 图雀社区</a></p>
+<p>鸣谢：</p>
+<p><a href="https://www.cnblogs.com/samwu/p/10360943.html">win10家庭版安装Docker for Windows - 草珊瑚 - 博客园</a></p>
+<p><a href="https://ask.csdn.net/questions/1054279">docker-Docker安装报错 Containers Windows Feature is not available - CSDN问答频道</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vue 项目中使用 reCAPTCHA 人机验证服务]]></title>
         <id>https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu/</id>
