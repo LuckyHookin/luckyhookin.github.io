@@ -11,12 +11,12 @@
 <meta charset="UTF-8">
 
 <title>Vue 项目中使用 reCAPTCHA 人机验证服务 | Lucky Hookin</title>
-<link href="https://luckyhookin.github.io/styles/main.css" type="text/css" rel="stylesheet"/>
+<link href="https://luckyhookin.gitee.io/styles/main.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.css"/>
 <script src="//cdn.bootcss.com/KaTeX/0.10.2/katex.min.js"></script>
 <script src="//cdn.bootcss.com/KaTeX/0.10.2/contrib/auto-render.min.js"></script>
-<script type="text/javascript" src="https://luckyhookin.github.io/media/scripts/jquery.js"></script>
-<script type="text/javascript" src="https://luckyhookin.github.io/media/scripts/basic.js"></script>
+<script type="text/javascript" src="https://luckyhookin.gitee.io/media/scripts/jquery.js"></script>
+<script type="text/javascript" src="https://luckyhookin.gitee.io/media/scripts/basic.js"></script>
 <script type="text/javascript" src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 <script src="//cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
 <script async type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -28,7 +28,7 @@
      <div class="header">
       <div class="logo_title">
 		  
-        <div class="title"><img id="img1" alt="logo" style="display:inline-block;" src="https://luckyhookin.github.io/images/avatar.png"/>
+        <div class="title"><img id="img1" alt="logo" style="display:inline-block;" src="https://luckyhookin.gitee.io/images/avatar.png"/>
 <script>
 var r = 0;
     window.onload = function(){
@@ -218,10 +218,10 @@ function change(){
 </span>
 <span style="margin-right:15px">
 <i class="fa fa-share"></i>
-<a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu/"><i class="fa fa-qrcode"></i></a>
-<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu/&sharesource=qzone&title=Vue 项目中使用 reCAPTCHA 人机验证服务&pics=https://blog.blinkstar.cn/images/avatar.png&summary=&lt;p&gt;在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。&lt;/p&gt;
+<a title="QR code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://luckyhookin.gitee.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu/"><i class="fa fa-qrcode"></i></a>
+<a title="qq share" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://luckyhookin.gitee.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu/&sharesource=qzone&title=Vue 项目中使用 reCAPTCHA 人机验证服务&pics=https://blog.blinkstar.cn/images/avatar.png&summary=&lt;p&gt;在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。&lt;/p&gt;
 "><i class="fa fa-qq"></i></a>
-<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://luckyhookin.github.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu/&sharesource=weibo&title=Vue 项目中使用 reCAPTCHA 人机验证服务 + " - " + &lt;p&gt;在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。&lt;/p&gt;
+<a title="weibo share" target="_blank" href="https://service.weibo.com/share/share.php?url=https://luckyhookin.gitee.io/post/vue-xiang-mu-zhong-shi-yong-recaptcha-ren-ji-yan-zheng-fu-wu/&sharesource=weibo&title=Vue 项目中使用 reCAPTCHA 人机验证服务 + " - " + &lt;p&gt;在前段时间的训练中，我偶然接触到谷歌提供的免费人机验证服务 reCAPTCHA，在一番学习后已将它接入到我的 Vue 练习项目中。下面将介绍我的接入过程与踩过的坑。&lt;/p&gt;
 &pic="https://blog.blinkstar.cn/images/avatar.png"><i class="fa fa-weibo"></i></a>
 </span>
 <span style="margin-right:15px">
@@ -248,7 +248,7 @@ function change(){
 <pre><code class="language-js">&lt;script src=&quot;https://www.recaptcha.net/recaptcha/api.js?render=explicit&quot; async defer&gt;&lt;/script&gt;
 </code></pre>
 <h2 id="点击复选框来验证">点击复选框来验证</h2>
-<figure data-type="image" tabindex="1"><img src="https://luckyhookin.github.io/post-images/reCAPTCHA/checkbox.gif" alt="checkbox.gif" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://luckyhookin.gitee.io/post-images/reCAPTCHA/checkbox.gif" alt="checkbox.gif" loading="lazy"></figure>
 <p>创建一个 vue 组件，完整代码如下：</p>
 <pre><code class="language-js">&lt;template&gt;
   &lt;!-- 添加一个 div 用作容器 --&gt;
@@ -290,9 +290,9 @@ export default {
 </code></pre>
 <p>此 <code>sitekey</code> 为<strong>测试专用</strong> <code>key</code>，你需要注册一个自己的 <code>sitekey</code> 用在生产环境中。</p>
 <p>注册地址（科学上网）：<a href="https://www.google.com/recaptcha/admin/create">https://www.google.com/recaptcha/admin/create</a></p>
-<figure data-type="image" tabindex="2"><img src="https://luckyhookin.github.io/post-images/reCAPTCHA/1.png" alt="1png" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://luckyhookin.gitee.io/post-images/reCAPTCHA/1.png" alt="1png" loading="lazy"></figure>
 <p>注册成功后得到两个密钥：</p>
-<figure data-type="image" tabindex="3"><img src="https://luckyhookin.github.io/post-images/reCAPTCHA/2.png" alt="2png" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://luckyhookin.gitee.io/post-images/reCAPTCHA/2.png" alt="2png" loading="lazy"></figure>
 <p>第一个密钥即是 <code>sitekey</code>。</p>
 <pre><code class="language-js">let self = this;
  setTimeout(function() {
@@ -303,10 +303,10 @@ export default {
  }, 200);
 </code></pre>
 <p>grecaptcha 的渲染 API，延时 200ms 避免报以下错误：</p>
-<figure data-type="image" tabindex="4"><img src="https://luckyhookin.github.io/post-images/reCAPTCHA/3.png" alt="3.png" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://luckyhookin.gitee.io/post-images/reCAPTCHA/3.png" alt="3.png" loading="lazy"></figure>
 <p><code>self.submit</code> 为回调函数，接收返回的 <code>token</code> 用于后端验证。</p>
 <p>除了 <code>sitekey</code> 和 <code>callback</code> 外，还有其他的参数，详细请看：<a href="https://developers.google.cn/recaptcha/docs/display#g-recaptcha_tag_attributes_and_grecaptcharender_parameters">这里</a></p>
-<figure data-type="image" tabindex="5"><img src="https://luckyhookin.github.io/post-images/reCAPTCHA/2.gif" alt="2.gif" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://luckyhookin.gitee.io/post-images/reCAPTCHA/2.gif" alt="2.gif" loading="lazy"></figure>
 <p>将接收到的 <code>token</code> 传到后端即可。</p>
 <pre><code class="language-js">      this.axios
         .get(&quot;http://localhost:3000/login&quot;, {
@@ -341,7 +341,7 @@ ctx.body = res.data;
 </li>
 </ul>
 <p>返回：</p>
-<figure data-type="image" tabindex="6"><img src="https://luckyhookin.github.io/post-images/reCAPTCHA/4.png" alt="4.png" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://luckyhookin.gitee.io/post-images/reCAPTCHA/4.png" alt="4.png" loading="lazy"></figure>
 <p>得到 <code>success: true</code> 表示通过验证。</p>
 </span></p></div><div id = "warn"></div>
 	<br>
@@ -350,7 +350,7 @@ ctx.body = res.data;
 <div style="color: #ccc;font-size:14px;"><i class="fa fa-cc"></i>该文章采用<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。转载请注明出处！</div>
 <div style="color: #ccc;font-size:14px;"><i class="fa fa-clock-o"></i>发布时间为：2019-11-08</div>    
 <p class="md_block">
-  <div class="reward"><div class="reward-button">赏 <span class="reward-code"><span class="wechat-code"> <img class="wechat-img" src="https://luckyhookin.github.io/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+  <div class="reward"><div class="reward-button">赏 <span class="reward-code"><span class="wechat-code"> <img class="wechat-img" src="https://luckyhookin.gitee.io/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
   <div style="text-align:center;color: #ccc;font-size:14px;">如果觉得这篇文章对您有帮助，可以请作者喝一杯饮料哦🥤</div>    
 </p> 
 </div>
@@ -372,7 +372,7 @@ ctx.body = res.data;
 
           <div style="float:right;text-align:right;color:#ccc;font-size:18px;width:50%;">
             下一篇
-            <a href="https://luckyhookin.github.io/post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er/">
+            <a href="https://luckyhookin.gitee.io/post/zhe-xie-kuai-jie-jian-ni-zhi-dao-ji-ge-er/">
               <p class="post-title">
                 <b>这些快捷键你知道几个？（二）</b>
               </p>
@@ -383,7 +383,7 @@ ctx.body = res.data;
 
           <div style="float:left;text-align:left;color:#ccc;font-size:18px;width:50%;">
             上一篇
-            <a href="https://luckyhookin.github.io/post/win10-jia-ting-ban-an-zhuang-docker-desktop-ji-lu/">
+            <a href="https://luckyhookin.gitee.io/post/win10-jia-ting-ban-an-zhuang-docker-desktop-ji-lu/">
               <p class="post-title">
                 <b>win10 家庭版安装 Docker Desktop 记录</b>
               </p>
@@ -411,7 +411,7 @@ imgList.forEach(img => {
   div.appendChild(img)
   div1.appendChild(figuration)}
 })
-$('img').on('error',function(){$(this).prop('src','https://luckyhookin.github.io/media/images/broken.jpg')});$(".md_block a").attr("rel","external nofollow");$("a[rel='external nofollow']").attr("target","_blank");$("a[href^='#']").removeAttr("target");$("a.ex").removeAttr("rel");$("a.ex").removeAttr("target");
+$('img').on('error',function(){$(this).prop('src','https://luckyhookin.gitee.io/media/images/broken.jpg')});$(".md_block a").attr("rel","external nofollow");$("a[rel='external nofollow']").attr("target","_blank");$("a[href^='#']").removeAttr("target");$("a.ex").removeAttr("rel");$("a.ex").removeAttr("target");
 content="<div class='warn'>本文最后更新于2019-11-08，已超过 1 年没有更新，涉及的内容可能已经失效！</div>";var date1="2019-11-08 15:43:55";date1=date1.replace("-","/");var date2=new Date();var date3=date2.getTime()-new Date(date1).getTime();var days=Math.floor(date3/(24*3600*1000));if(days>=365){document.getElementById("warn").innerHTML=content};
 $('#pjax-container').lightGallery({
     selector: '.back'
@@ -478,7 +478,7 @@ $('#pjax-container').lightGallery({
 
     </div>
 
-<script type="text/javascript" src="https://luckyhookin.github.io/media/scripts/darkmode.js"></script>
+<script type="text/javascript" src="https://luckyhookin.gitee.io/media/scripts/darkmode.js"></script>
 <script>
 new Darkmode({label: '🌓',saveInCookies: true,backgroundColor: '#f7f7f7',time: '0.5s'}).showWidget();
 console.clear();
