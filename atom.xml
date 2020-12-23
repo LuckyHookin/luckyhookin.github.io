@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luckyhookin.gitee.io</id>
     <title>Lucky Hookin</title>
-    <updated>2020-09-08T06:43:21.328Z</updated>
+    <updated>2020-12-23T02:20:59.454Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luckyhookin.gitee.io"/>
     <link rel="self" href="https://luckyhookin.gitee.io/atom.xml"/>
@@ -10,6 +10,187 @@
     <logo>https://luckyhookin.gitee.io/images/avatar.png</logo>
     <icon>https://luckyhookin.gitee.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Lucky Hookin</rights>
+    <entry>
+        <title type="html"><![CDATA[VS Code 调试 js 的两种方法]]></title>
+        <id>https://luckyhookin.gitee.io/post/vs-code-diao-shi-js-de-liang-chong-fang-fa/</id>
+        <link href="https://luckyhookin.gitee.io/post/vs-code-diao-shi-js-de-liang-chong-fang-fa/">
+        </link>
+        <updated>2020-12-23T02:18:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文将介绍 VS Code 调试 js 的两种方法：</p>
+<ol>
+<li>
+<p>Quokka.js 插件</p>
+</li>
+<li>
+<p>Debugger for Chrome 与 Live Server 搭配</p>
+</li>
+</ol>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文将介绍 VS Code 调试 js 的两种方法：</p>
+<ol>
+<li>
+<p>Quokka.js 插件</p>
+</li>
+<li>
+<p>Debugger for Chrome 与 Live Server 搭配</p>
+</li>
+</ol>
+<!-- more -->
+<h1 id="quokkajs-插件">Quokka.js 插件</h1>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode">插件地址</a></p>
+<p>在扩展商店搜索安装：</p>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/12/22/YxJw3f79BE2lvGr.png" alt="" loading="lazy"></figure>
+<p>在VS code 中使用快捷键 <code>ctrl+shift+P</code> 调出面版，输入 <code>quo</code>：</p>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2020/12/22/KluZhT14q3rAVWO.png" alt="" loading="lazy"></figure>
+<p>可以看到有两个选项，一个是调试 js 的，一个是调试 ts 的。我们选第一个。</p>
+<p>可能会有一个询问你是否购买 pro 版的提示，你可以关掉不用理会，也可以选择购买。</p>
+<p>尝试在打开的编辑框中输入几句代码：</p>
+<figure data-type="image" tabindex="3"><img src="https://i.loli.net/2020/12/22/9dRXLAc8fUtaoxG.png" alt="" loading="lazy"></figure>
+<p>你会发现，代码的运行是实时的。左边的绿色方块代表语句被成功执行，如果执行不成功，会变成红色。</p>
+<figure data-type="image" tabindex="4"><img src="https://i.loli.net/2020/12/22/UMvge9pO5dSHC8c.png" alt="" loading="lazy"></figure>
+<h1 id="debugger-for-chrome-与-live-server-搭配">Debugger for Chrome 与 Live Server 搭配</h1>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger for Chrome 插件地址</a></p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server 插件地址</a></p>
+<p>请先下载安装这两个插件；本方法需要安装谷歌浏览器。</p>
+<p>假设你有这样一个前端项目：</p>
+<figure data-type="image" tabindex="5"><img src="https://i.loli.net/2020/12/22/Yv8UsuoQ2ghCpzB.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://i.loli.net/2020/12/22/Nyueb7iHAkSdTvD.png" alt="" loading="lazy"></figure>
+<p>当你安装好 Live Server 后你会发现 VS Code 右下角有个 <code>Go Live</code> 小按钮：</p>
+<figure data-type="image" tabindex="7"><img src="https://i.loli.net/2020/12/22/5wyJ2zKouAlVIPd.png" alt="" loading="lazy"></figure>
+<p>点它！</p>
+<p>Live Srever 会创建一个本地开发服务器，并弹出一个浏览器窗口，地址类似这样：</p>
+<p><code>http://127.0.0.1:5500/</code></p>
+<figure data-type="image" tabindex="8"><img src="https://i.loli.net/2020/12/22/SKoIhM5aRWQTBYw.png" alt="" loading="lazy"></figure>
+<p>同时也会有提示：</p>
+<figure data-type="image" tabindex="9"><img src="https://i.loli.net/2020/12/22/win3OjUxTHuQF8R.png" alt="" loading="lazy"></figure>
+<p>你可以暂时关掉这个浏览器窗口，不用担心，在没再次点击右下角的那个小按钮或关掉 VS Code 时，你依然可以通过 <code>http://127.0.0.1:5500/</code> 打开刚才的网页。</p>
+<p>请记住这个端口号：<code>5500</code>，因为后面会用到。当你多开 Live Srever 或其他程序占用了这个端口号时，端口号会自动 <code>+1</code> 。</p>
+<blockquote>
+<p>顾名思义，Live Server 是实时更新的。当你修改了项目的文件或代码，Live Server 会马上更新并自动刷新页面。</p>
+</blockquote>
+<p>回到编辑器。</p>
+<p>依次点击: 运行图标 -&gt; 创建 launch.json 文件：</p>
+<figure data-type="image" tabindex="10"><img src="https://i.loli.net/2020/12/22/5xCisUXHgoPOq9D.png" alt="" loading="lazy"></figure>
+<p>用下面的配置覆盖掉原本的配置并保存：</p>
+<pre><code class="language-json">{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
+        {
+            &quot;type&quot;: &quot;chrome&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;name&quot;: &quot;chrome 调试&quot;,
+            &quot;url&quot;: &quot;http://localhost:5500&quot;,
+            &quot;webRoot&quot;: &quot;${workspaceFolder}&quot;
+        }
+    ]
+}
+</code></pre>
+<p>VS Code 就会在项目所在目录中保存相关的配置：</p>
+<figure data-type="image" tabindex="11"><img src="https://i.loli.net/2020/12/22/pDdlowHUWx7CFeS.png" alt="" loading="lazy"></figure>
+<p><strong>注意：</strong> <code>&quot;url&quot;</code> 字段中的端口号 <code>5500</code> 要与 Live Server 提供的端口号对应。</p>
+<p>点击：</p>
+<figure data-type="image" tabindex="12"><img src="https://i.loli.net/2020/12/22/xGeNbTVkgisZ36M.png" alt="" loading="lazy"></figure>
+<p>你会看到：</p>
+<figure data-type="image" tabindex="13"><img src="https://i.loli.net/2020/12/22/C95O6MrwlaHz2LW.png" alt="" loading="lazy"></figure>
+<p>如你所愿，它已经正常工作了。</p>
+<p>我们把鼠标移到图示位置，点击以打上断点：</p>
+<figure data-type="image" tabindex="14"><img src="https://i.loli.net/2020/12/22/pV7TkzMrSOHFqR9.png" alt="" loading="lazy"></figure>
+<p>然后点击网页上的按钮：</p>
+<figure data-type="image" tabindex="15"><img src="https://i.loli.net/2020/12/22/VSkcWiUDdhmNJ15.png" alt="" loading="lazy"></figure>
+<p>你会看到打上的断点成功拦截执行：</p>
+<figure data-type="image" tabindex="16"><img src="https://i.loli.net/2020/12/22/hGlZ4vI5e3pBK7T.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="17"><img src="https://i.loli.net/2020/12/22/nqm2xbI4W7elfRk.png" alt="" loading="lazy"></figure>
+<hr>
+<p>细心的你可能会发现，当点击一次 <code>Go Live</code> 按钮时会打开一个浏览器窗口，再点击一次调试按钮时（快捷键 <code>F5</code>），会打开第二个用于调试的窗口。这可能是没有必要的，我们只需要一个窗口就行了。</p>
+<p>下面我们来编辑配置，使这个过程只需打开一次浏览器窗口。</p>
+<p>点击 “chrome 调试” 旁边的齿轮：</p>
+<figure data-type="image" tabindex="18"><img src="https://i.loli.net/2020/12/22/6Cd3MNbsjhtU1eL.png" alt="" loading="lazy"></figure>
+<p>在打开的编辑框依次点击：</p>
+<figure data-type="image" tabindex="19"><img src="https://i.loli.net/2020/12/22/Dfv6hsqoCSeZHrW.png" alt="" loading="lazy"></figure>
+<p>得到如下配置并保存：</p>
+<figure data-type="image" tabindex="20"><img src="https://i.loli.net/2020/12/22/nASoejpE4I3ZNtW.png" alt="" loading="lazy"></figure>
+<p>在扩展商店搜索 Live Server 并打开它的扩展设置：</p>
+<figure data-type="image" tabindex="21"><img src="https://i.loli.net/2020/12/22/1uEWSJmp83Ac5xa.png" alt="" loading="lazy"></figure>
+<p>需要修改的配置有两个：</p>
+<figure data-type="image" tabindex="22"><img src="https://i.loli.net/2020/12/22/h9iT4eqXmIukyNF.png" alt="" loading="lazy"></figure>
+<ol>
+<li>Chrome Debugging Attachment</li>
+</ol>
+<figure data-type="image" tabindex="23"><img src="https://i.loli.net/2020/12/22/MjnfbQYi6rglaXJ.png" alt="" loading="lazy"></figure>
+<p>点击进入，将 <code>&quot;liveServer.settings.ChromeDebuggingAttachment&quot;: false</code> 改为 <code>true</code>。</p>
+<pre><code class="language-json">&quot;liveServer.settings.ChromeDebuggingAttachment&quot;: true
+</code></pre>
+<ol start="2">
+<li>Custom Browser</li>
+</ol>
+<p>点击此选项中的下拉框，我们选择 <code>chrome</code>：</p>
+<figure data-type="image" tabindex="24"><img src="https://i.loli.net/2020/12/22/HBl98jMkqAvm1hf.png" alt="" loading="lazy"></figure>
+<p>修改完成！</p>
+<p>接下来我们重启 Live Srever 服务：</p>
+<figure data-type="image" tabindex="25"><img src="https://i.loli.net/2020/12/22/urjnxZ46y9SkzmQ.png" alt="" loading="lazy"></figure>
+<p>回到 VS Code，按下 <code>F5</code> 键，启动调试：</p>
+<figure data-type="image" tabindex="26"><img src="https://i.loli.net/2020/12/22/XYrwIKcjPLp8BfA.png" alt="" loading="lazy"></figure>
+<p>之后本项目的每次调试你只需要点击 <code>Go Live</code> 按钮并回到 VS Code 按下 <code>F5</code> 键就行了。</p>
+<p>当然，<code>chrome 调试</code> 选项可能还是生效的，当你关掉 Live Server 打开的浏览器窗口时，可以尝试使用这个选项再次打开。</p>
+<figure data-type="image" tabindex="27"><img src="https://i.loli.net/2020/12/22/CqIb9xhMySZc1eo.png" alt="" loading="lazy"></figure>
+<p>如果遇到端口号被占用的情况，可以点击调试旁边的齿轮来修改。</p>
+<p>祝：</p>
+<p>永无 BUG！</p>
+<hr>
+<p>使用到的代码：</p>
+<pre><code class="language-html">&lt;!-- ./index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;time&quot;&gt;请点击下方按钮以获取当前时间&lt;/div&gt;
+    &lt;button id=&quot;getTime&quot;&gt;获取时间&lt;/button&gt;
+    &lt;script src=&quot;./js/index.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code class="language-js">// ./js/index.js
+let getTimeBtn = document.getElementById(&quot;getTime&quot;);
+getTimeBtn.onclick = function (e) {
+    let time = document.getElementById(&quot;time&quot;);
+    let now = new Date().toLocaleString();
+    time.innerHTML = now;
+}
+</code></pre>
+<pre><code class="language-json">// ./.vscode/launch.json
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
+        {
+            &quot;name&quot;: &quot;Attach to Chrome&quot;,
+            &quot;port&quot;: 9222,
+            &quot;request&quot;: &quot;attach&quot;,
+            &quot;type&quot;: &quot;pwa-chrome&quot;,
+            &quot;webRoot&quot;: &quot;${workspaceFolder}&quot;
+        },
+        {
+            &quot;type&quot;: &quot;chrome&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;name&quot;: &quot;chrome 调试&quot;,
+            &quot;url&quot;: &quot;http://localhost:5500&quot;,
+            &quot;webRoot&quot;: &quot;${workspaceFolder}&quot;
+        }
+
+    ]
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[win10 家庭版安装 Docker Desktop 记录]]></title>
         <id>https://luckyhookin.gitee.io/post/win10-jia-ting-ban-an-zhuang-docker-desktop-ji-lu/</id>
